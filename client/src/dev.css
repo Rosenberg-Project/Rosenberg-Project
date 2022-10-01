@@ -1,0 +1,85 @@
+.container {
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(64, 123, 175);
+    font-family: 'Poppins';
+}
+
+.form {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 1px;
+}
+
+.lable {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px; 
+}
+
+.box {
+    text-align: center;
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-top: 1px;
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    outline: 4;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.box.success {
+    color: rgb(0, 255, 47);
+    outline: 4;
+}
+
+.button {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 10px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+  
+.button:active {
+    background-color: #06b;
+}
+
+.error {
+    text-align: center;
+    color: rgb(255, 0, 51);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 10px; 
+}
