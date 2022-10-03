@@ -15,9 +15,18 @@ mongoose.connect('mongodb+srv://mascasteel:Obnyf0OR9wfPxpdc@cluster1.ayf8d5x.mon
 
 app.post("/insert", async (req, res) =>{
     const {userid,password,designation} = req.body.insertidpassword
-    const actions = new accessmodel({ user_ID: userid, password_ID: password ,designation_ID: designation});
     try {
-        await actions.save();
+        const preuser = await accessmodel.findOne({user_ID: userid});
+        console.log(preuser);
+
+        if(preuser){
+            res.send("User is already present");
+        }else{
+            const actions = new accessmodel({ user_ID: userid, password_ID: password ,designation_ID: designation});
+            await actions.save();
+            res.send("New user added");
+            console.log(actions);
+        }
     }catch(err) {
         console.log(err);
     };
