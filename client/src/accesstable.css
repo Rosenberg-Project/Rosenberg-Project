@@ -1,0 +1,17 @@
+.add_btn {
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.conatiner {
+    overflow: auto;
+}
+
+.table {
+    height: auto;
+    max-width: 1600px;
+    align-self: center;
+    align-self: center;
+}
+     
