@@ -21,12 +21,5 @@ function App() {
     </>
   );
 };
-//<>
-// 
-// <Routes>
-//   
-
-// </Routes>
-//</>
 
 export default App;
